@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <h1>Class Survey Form</h1>
+ <p>Thank you for taking time to help us improve our class!</p>
+ <form action="http//www.mohirdev.uz">
+    <fieldset>
+        <label for="first-name">Enter Your First Name:<input type="text" id="first-name" name="first-name" required></label>
+        <label for="last-name">Enter Your Last Name:<input type="text" id="last-name" name="last-name" required></label>
+        <label for="email">Enter Your Email:<input type="email" id="email" name="email" placeholder="Your email" required></label>
+        <label for="age">Enter Your Age(optional): <input type="number" id="age" name="age" min="13" max="70"></label>
+
+    </fieldset>
+    <fieldset>
+        <label for="your-course">Which course are you studying?
+            <select name="your-course" id="your-course">
+                <option value="">select one</option>
+                <option value="1">Front End</option>
+                <option value="2">Data Sience</option>
+                <option value="3">Project Managment</option>
+                <option value="4">Graphic Design</option>
+                <option value="5">GO programming language</option>
+            </select>
+        </label>
+    </fieldset>
+    <fieldset>
+        <label>What Zoom meting time is optional for you?
+        <label for="morning">In the morning<input type="radio" id="morning" name="zoom-time" class="inline"></label>
+        <label for="afternoon">In the afternoon<input type="radio" id="afternoon" name="zoom-time" class="inline"></label>
+        <label for="evening">In the evening<input type="radio" id="evening" name="zoom-time" class="inline"></label>
+        </label>
+    </fieldset>
+    <label for="comments">Comments and suggestions?
+        <textarea name="comments" id="comments" cols="40" rows="7" placeholder="I want to change ...in data sience course... "></textarea>
+    </label>
+    <input type="submit" value="Submit">
+ </form>
+
+
+</body>
+</html>
